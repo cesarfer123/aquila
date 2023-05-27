@@ -11,14 +11,14 @@
 
 
 
-<div class="content">
+<div class="content" style="background-color:green">
 
-content
+aprendiendo git con pildoras informaticas
 </div>
 
 
 <?php
 
-get_footer();
+get_footer(); 
  
 ?>
