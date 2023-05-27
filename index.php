@@ -15,7 +15,9 @@
 
 aprendiendo git con pildoras informaticas
 </div>
-
+ <p style="color:blue">
+    tercer commit en el proceso
+ </p>
 
 <?php
 
