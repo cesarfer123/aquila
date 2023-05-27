@@ -18,7 +18,7 @@ aprendiendo git con pildoras informaticas
  <p style="color:blue">
     tercer commit en el proceso
  </p>
-
+<p>agregando informacion desde el editor de github</p>
 <?php
 
 get_footer(); 
