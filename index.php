@@ -24,6 +24,8 @@ aprendiendo git con pildoras informaticas
 
 <p>Otro parrafo en master</p>
 
+<i>parrafo en cursiva en master</i>
+
 <?php
 
 get_footer(); 
