@@ -22,6 +22,20 @@ aprendiendo git con pildoras informaticas
 
 <p>agregando parrrafo desde la rama master</p>
 
+
+
+
+
+
+
+
+
+<p>agregando parrafo en diseñador 2</p>
+
+
+
+
+
 <?php
 
 get_footer(); 
