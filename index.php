@@ -22,6 +22,10 @@ aprendiendo git con pildoras informaticas
 
 <p>agregando parrafo en diseñador 2</p>
 
+
+<p>agregando parrafo en diseñador 3</p>
+
+
 <?php
 
 get_footer(); 
