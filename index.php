@@ -20,11 +20,7 @@ aprendiendo git con pildoras informaticas
  </p>
 <p>agregando informacion desde el editor de github</p>
 
-
-
-<p>Otro parrafo en master</p>
-
-<i>parrafo en cursiva en master</i>
+<p>agregando parrrafo desde la rama master</p>
 
 <?php
 
