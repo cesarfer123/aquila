@@ -26,6 +26,20 @@ aprendiendo git con pildoras informaticas
 
 <i>parrafo en cursiva en master</i>
 
+
+
+
+
+
+
+
+
+<p>agregando parrafo en diseñador 2</p>
+
+
+
+
+
 <?php
 
 get_footer(); 
