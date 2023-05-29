@@ -18,23 +18,9 @@ aprendiendo git con pildoras informaticas
  <p style="color:blue">
     tercer commit en el proceso
  </p>
-<p>agregando informacion desde el editor de github</p>
-
-<p>agregando parrrafo desde la rama master</p>
-
-
-
-
-
-
-
-
+<p>agregando informacion desde el editor de github,veremos si somos capaces de hacer un merge</p>
 
 <p>agregando parrafo en diseñador 2</p>
-
-
-
-
 
 <?php
 
