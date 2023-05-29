@@ -19,6 +19,11 @@ aprendiendo git con pildoras informaticas
     tercer commit en el proceso
  </p>
 <p>agregando informacion desde el editor de github</p>
+
+
+
+<p>Otro parrafo en master</p>
+
 <?php
 
 get_footer(); 
