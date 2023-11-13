@@ -3,6 +3,7 @@
 namespace AQUILA_THEME\Inc\Traits;
 
 trait Singleton{
+    
     public function __construct(){
 
 
@@ -13,7 +14,7 @@ trait Singleton{
 
     }
 
-    final public function get_instance(){
+    final static public function get_instance(){
         static $instance=[];
         $called_class=get_called_class();
         if(!isset($instance[$called_class])){

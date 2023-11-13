@@ -18,7 +18,7 @@ function autoloader( $resource = '' ) {
 	$resource_path  = false;
 	$namespace_root = 'AQUILA_THEME\\';
 	$resource       = trim( $resource, '\\' );
-
+	// show($resource);
 	if ( empty( $resource ) || strpos( $resource, '\\' ) === false || strpos( $resource, $namespace_root ) !== 0 ) {
 		// Not our namespace, bail out.
 		return;
