@@ -13,12 +13,11 @@
     use singleton;
     protected function __construct()
     {   
-        // wp_die("hola");
-        // load class
-        $this->set_hooks();
+
+        $this->setup_hooks();
     }
 
-    protected function set_hooks(){
+    protected function setup_hooks(){
 
 
         add_action( 'wp_enqueue_scripts', [$this,'register_styles']);

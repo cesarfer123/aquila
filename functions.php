@@ -26,11 +26,8 @@ function aquila_get_theme_instance(){
     \AQUILA_THEME\Inc\AQUILA_THEME::get_instance();
 }
 
-
 aquila_get_theme_instance();
 
-
-show(AQUILA_DIR_URI);
 
  add_theme_support( 'title-tag' );
  

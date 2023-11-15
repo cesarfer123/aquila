@@ -11,48 +11,55 @@
  class AQUILA_THEME{
     
     use singleton;
+
     protected function __construct()
     {   
         // wp_die("hola");
         // load class
-        $this->set_hooks();
+        Assets::get_instance();
+        Menus::get_instance();
+        $this->setup_hooks();
     }
 
-    protected function set_hooks(){
+    protected function setup_hooks(){
 
+        /**
+         * Actions
+         */
 
-        add_action( 'wp_enqueue_scripts', [$this,'register_styles']);
-        add_action( 'wp_enqueue_scripts', [$this,'register_scripts']);
-
-    }
-
-
-    public function register_styles(){
-
-        // register styles
-        wp_register_style( 'style-css', get_stylesheet_uri() , [], filemtime(AQUILA_DIR_PATH . '/style.css'), 'all' );
-        wp_register_style( 'bootstrap-css', AQUILA_DIR_URI . '/assets/src/library/css/bootstrap.min.css' , [], false , 'all' );
-
-        // enqueue styles
-        wp_enqueue_style( 'style-css' );
-        wp_enqueue_style( 'bootstrap-css' );
+        add_action("after_setup_theme",[$this,"setup_theme"]);
 
     }
 
-    public function register_scripts(){
+    public function setup_theme(){
 
-        // register scripts
-        wp_register_script( 'main-js', AQUILA_DIR_URI . '/assets/main.js', [], filemtime(AQUILA_DIR_PATH . '/assets/main.js'), true);
-        wp_register_script( 'bootstrap-js', AQUILA_DIR_URI. '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
+        add_theme_support("title-tag");
+        add_theme_support("custom-logo");
+        add_theme_support( 'custom-background', [
+            'default-color'     => '0000ff',
+            'default-image'     => '',
+            'default-repeat'    => 'no-repeat',
+        ] );
 
-        // enqueque scripts
-        wp_enqueue_script( 'main-js');
-        wp_enqueue_script( 'bootstrap-js');
+        add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'customize-selective-refresh-widgets' );
+        add_theme_support('automatic-feed-links');
+        add_theme_support('html5',[
+            'comment-list', 
+            'comment-form', 
+            'search-form', 
+            'gallery', 
+            'caption', 
+            'style', 
+            'script'
+        ]);
+
+        add_editor_style();
+
+        add_theme_support( 'wp-block-styles' );
+        add_theme_support('align-wide');
 
     }
 
 
-
-
-    
  }
