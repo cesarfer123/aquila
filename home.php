@@ -18,11 +18,11 @@
             <div class="container">
                 <?php 
                     if(is_home() && !is_front_page()){   ?>
-                    <header class="mb-5">
-                        <h1 class="page-title screen-reader-text">
+                    <div class="mb-5">
+                        <h1>
                             <?php single_post_title(); ?>
                         </h1>
-                    </header>
+                    </div>
                 <?php
 
                     }
@@ -31,7 +31,7 @@
 
                 <?php 
                     while ( have_posts() ) : the_post(); ?>
-                        
+
                     <h2><?php the_title(); ?></h2>    
                     <p><?php the_content(); ?></p>    
                         

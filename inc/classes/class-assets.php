@@ -42,11 +42,13 @@
 
         // register scripts
         wp_register_script( 'main-js', AQUILA_DIR_URI . '/assets/main.js', [], filemtime(AQUILA_DIR_PATH . '/assets/main.js'), true);
-        wp_register_script( 'bootstrap-js', AQUILA_DIR_URI. '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
+        wp_register_script( 'bootstrap-js', AQUILA_DIR_URI . '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
+        wp_register_script( 'bundle-js', AQUILA_DIR_URI . '/assets/src/library/js/bootstrap.bundle.min.js', [], false, true);
 
         // enqueque scripts
         wp_enqueue_script( 'main-js');
         wp_enqueue_script( 'bootstrap-js');
+        wp_enqueue_script( 'bundle-js');
 
     }
 
