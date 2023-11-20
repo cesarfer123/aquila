@@ -18,6 +18,7 @@
         // load class
         Assets::get_instance();
         Menus::get_instance();
+        Meta_Boxes::get_instance();
         $this->setup_hooks();
     }
 
@@ -43,7 +44,7 @@
         // añade la imagen destacada
         add_theme_support( 'post-thumbnails' );
         // registrar un tamaño de imagen
-        add_image_size('featured-thumbnail',250,180,true);
+        add_image_size('featured-thumbnail',260,180,true);
         add_theme_support( 'post-thumbnails' );
         // Cuando añades este soporte en tu tema, significa que estás permitiendo que los widgets
         //  se actualicen de manera selectiva dentro del Personalizador sin recargar la página 

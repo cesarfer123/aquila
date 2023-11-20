@@ -58,21 +58,6 @@
                     ?>
                 </div>
 
-                <!-- <div class="row">
-                    <?php
-                    while(have_posts()): the_post(); ?>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div>
-                            <h3><?php the_title(); ?></h3>    
-                            <div class="content"><?php the_content(); ?></div>   
-                        </div>
-                    </div>
-                
-                <?php
-                    endwhile;
-                    ?>
-                </div> -->
             </div>
 
         <?php

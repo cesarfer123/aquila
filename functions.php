@@ -8,7 +8,7 @@
 function show($data){
     echo '<pre>';
     print_r($data);
-    echo "<br>";
+    echo "</pre>";
     wp_die();
 }
 
